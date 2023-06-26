@@ -1,0 +1,17 @@
+.idea
+/*
+
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/recipes-plus
+
+!.gitignore
+!README.md
+/wp-content/themes/recipes-plus/package-lock.json
+/wp-content/themes/recipes-plus/node_modules
+
+.DS_Store
+gulpfile.js
+/wp-content/themes/recipes-plus/gulpfile.js

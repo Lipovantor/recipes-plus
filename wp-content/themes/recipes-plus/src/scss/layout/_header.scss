@@ -1,0 +1,45 @@
+.header {
+  padding: 45px 0;
+  background-color: white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container_xl {
+  width: 100%;
+  max-width: 1460px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.logo {
+
+}
+
+.main-menu {
+  margin-left: auto;
+
+  &__item {
+    margin-right: 100px;
+    text-decoration: none;
+    color: #3F3E3E;
+    font-size: 22px;
+    line-height: 32px;
+
+    &:last-child {
+      margin-right: 110px;
+    }
+  }
+}
+
+.burger {
+
+  &__svg {
+
+  }
+}
