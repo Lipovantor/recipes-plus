@@ -18,13 +18,14 @@ if (!defined('ABSPATH')) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <main class="main">
 
 <header class="header">
-    <div class="container_xl header__container">
+    <div class="container container_xl header__container">
         <a href="#" class="logo">
             <img class="logo__image" src="<?php echo TEST_IMG_URI . 'icons/logo_en.svg'; ?>" alt="">
         </a>

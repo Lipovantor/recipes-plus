@@ -2,7 +2,20 @@
   box-sizing: border-box;
   outline: none;
 }
+
 body,
 html {
   min-height: 100%;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  &_xl {
+    width: 100%;
+    max-width: 1460px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
 }

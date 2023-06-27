@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url('../img/hero_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 740px;
+
+  &__darken {
+    width: 100%;
+    padding: 23px 0;
+    background: rgba(0, 0, 0, 0.50);
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 103px;
+    font-weight: 600;
+    line-height: 114px;
+  }
+}

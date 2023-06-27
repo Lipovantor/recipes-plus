@@ -1,20 +1,16 @@
 .header {
   padding: 45px 0;
   background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-}
-
-.container_xl {
-  width: 100%;
-  max-width: 1460px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
 }
 
 .logo {
