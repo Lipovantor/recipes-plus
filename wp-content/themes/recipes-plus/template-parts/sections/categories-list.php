@@ -38,6 +38,6 @@ if (!defined('ABSPATH')) {
         </a>
       </li>
     </ul>
-    <a href="#">смотреть все</a>
+    <a href="#" class="categories-list__see-all">смотреть все</a>
   </div>
 </section>

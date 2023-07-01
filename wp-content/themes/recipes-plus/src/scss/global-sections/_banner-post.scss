@@ -1,0 +1,36 @@
+.banner-post {
+  background-image: url('../img/wine-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  height: calc(100vh - 144px);
+  
+  &__header {
+    margin-left: 40%;
+    color: #FFF;
+    max-width: 740px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 91px;
+    font-weight: 500;
+    line-height: 100px;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+}

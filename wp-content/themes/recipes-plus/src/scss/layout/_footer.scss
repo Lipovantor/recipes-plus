@@ -1,0 +1,59 @@
+.main-footer {
+  padding-top: 100px;
+  background-color: #3F3E3E;
+
+  &__top {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 180px;
+    border-bottom: 1px solid #DADADA;
+
+    &::before {
+      content: "";
+      width: 500px;
+      height: 330px;
+      position: absolute;
+      top: 20px;
+      left: -250px;
+      background-image: url('../img/footer-food.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__bottom {
+    padding: 25px 0;
+  }
+
+  &__copyright {
+    text-align: center;
+    color: #EDECEC;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      color: #FFF;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      color: #EDECEC;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+  }
+}

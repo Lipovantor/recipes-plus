@@ -15,8 +15,11 @@ Template Name: Front Page
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('front-page', TT_DIST_JS_URI . 'front-page.min.js', 'jquery', null, 1);
+    wp_enqueue_script('slick-js', TEST_ASSETS_URI . 'slick/slick.min.js', 'jquery', null, 1);
     
     wp_enqueue_style('front-page', TT_DIST_CSS_URI . 'front-page.min.css');
+    wp_enqueue_style('slick-css', TEST_ASSETS_URI . 'slick/slick.css');
+    wp_enqueue_style('slick-theme-css', TEST_ASSETS_URI . 'slick/slick-theme.css');
 },200);
 
 get_header();
@@ -27,48 +30,16 @@ the_content();
 echo get_template_part(TEST_TEMPLATES_DIR . 'sections/hero');
 
 echo get_template_part(TEST_TEMPLATES_DIR . 'sections/categories-list');
+
+echo get_template_part(TEST_TEMPLATES_DIR . 'sections/slider-posts');
+
+echo get_template_part(TEST_TEMPLATES_DIR . 'sections/banner-post');
+
+echo get_template_part(TEST_TEMPLATES_DIR . 'sections/slider-posts');
+
+echo get_template_part(TEST_TEMPLATES_DIR . 'sections/contact-form');
 ?>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo nam. Aliquam voluptates eaque magnam, quae sapiente, quibusdam quisquam praesentium id ipsa laudantium quia quod cupiditate, magni in quis sit?</p>
 
 <?php
 get_footer();
