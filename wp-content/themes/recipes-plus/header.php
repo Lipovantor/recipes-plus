@@ -30,8 +30,8 @@ if (!defined('ABSPATH')) {
             <img class="logo__image" src="<?php echo TEST_IMG_URI . 'icons/logo_en.svg'; ?>" alt="">
         </a>
         <nav class="main-menu">
-            <a href="#" class="main-menu__item">Главная</a>
-            <a href="#" class="main-menu__item">Рецепты</a>
+            <a href="http://recipes-plus" class="main-menu__item">Главная</a>
+            <a href="http://recipes-plus/recipes/" class="main-menu__item">Рецепты</a>
             <a href="#" class="main-menu__item">О нас</a>
             <a href="#" class="main-menu__item">Контакты</a>
         </nav>
