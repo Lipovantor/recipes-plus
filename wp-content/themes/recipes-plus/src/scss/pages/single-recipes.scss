@@ -1,0 +1,100 @@
+@import "../variables";
+@import "../mixins";
+
+.recipe-content {
+  padding: 100px 0;
+
+  h2 {
+    color: #3E9F5F;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 15px 0;
+  }
+
+  p {
+    color: #3F3E3E;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .wp-block-image {
+    margin: 26px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .col {
+
+    &-content {
+      width: calc(65% - 20px);
+    }
+
+    &-sidebar {
+      width: calc(35% - 20px);
+    }
+  }
+}
+
+.recipe-sidebar {
+  position: sticky;
+  top: 144px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  &__top {
+    margin-bottom: 60px;
+  }
+  
+  &__bottom {
+    padding: 16px;
+    border-radius: 10px;
+    background: #3E9F5F;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFF;
+
+    p {
+      color: #FFF;
+    }
+  }
+
+  &__product-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
+    margin-bottom: 14px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 14px;
+    color: #3F3E3E;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

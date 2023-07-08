@@ -1,0 +1,23 @@
+.recipe-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 144px);
+
+  &__darken {
+    width: 100%;
+    padding: 23px 0;
+    background: rgba(0, 0, 0, .50);
+  }
+
+  &__title {
+    text-align: left;
+    color: #FFF;
+    font-size: 103px;
+    font-weight: 600;
+    line-height: 114px;
+  }
+}
