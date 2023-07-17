@@ -223,3 +223,4 @@ add_action('wp_ajax_nopriv_recipe_search', 'recipe_search_ajax_handler');
 // Включение миниатюр (thumbnails) для типа записи "Рецепты"
 add_theme_support('post-thumbnails', array('recipes'));
 
+add_theme_support('menus');

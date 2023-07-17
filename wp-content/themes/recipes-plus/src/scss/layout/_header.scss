@@ -18,17 +18,20 @@
 }
 
 .main-menu {
-  margin-left: auto;
+  .menu {
+    margin-left: auto; 
+    display: flex;
 
-  &__item {
-    margin-right: 100px;
-    text-decoration: none;
-    color: #3F3E3E;
-    font-size: 22px;
-    line-height: 32px;
-
-    &:last-child {
-      margin-right: 110px;
+    &-item {
+      margin-right: 100px;
+      text-decoration: none;
+      color: #3F3E3E;
+      font-size: 22px;
+      line-height: 32px;
+  
+      &:last-child {
+        margin-right: 110px;
+      }
     }
   }
 }

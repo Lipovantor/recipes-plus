@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
   <div class="hero__darken">
     <h1 class="hero__title">Рецепты плюс</h1>
   </div>
-  <?php if (is_page(14)) { ?>
+  <?php if (is_page(14) || is_page(19)) { ?>
     <div class="recipe-search">
       <form class="search-form" action="<?php echo esc_url(admin_url('admin-ajax.php')); ?>" method="post">
         <input type="search" class="search-field" placeholder="Поиск рецептов" name="search_query" />

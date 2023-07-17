@@ -29,12 +29,25 @@ if (!defined('ABSPATH')) {
         <a href="#" class="logo">
             <img class="logo__image" src="<?php echo TEST_IMG_URI . 'icons/logo_en.svg'; ?>" alt="">
         </a>
-        <nav class="main-menu">
+        <!-- <nav class="main-menu">
             <a href="http://recipes-plus" class="main-menu__item">Главная</a>
             <a href="http://recipes-plus/recipes/" class="main-menu__item">Рецепты</a>
             <a href="#" class="main-menu__item">О нас</a>
             <a href="#" class="main-menu__item">Контакты</a>
-        </nav>
+        </nav> -->
+        <?php 
+        $args = array(
+            'menu' => 'main-menu',
+            'theme_location' => 'header',
+            'depth'	=> 0,
+            'container' => 'nav',
+            'container_class'   => 'main-menu',
+            'fallback_cb' => false
+        );
+         
+        wp_nav_menu( $args );
+        ?>
+
         <button class="burger">
             <svg class="burger__svg" width="45" height="39" viewBox="0 0 45 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="20" height="17.5" rx="2" fill="#3F3E3E"/>
